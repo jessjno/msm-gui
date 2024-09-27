@@ -57,6 +57,12 @@
     <%= the_director.name %>
   </dd>
 
+  <% if the_director == nil %>
+    Uh oh! We weren't able to find a director for this movie.
+  <% else %>
+    <%= the_director.name %>
+  <% end %>
+  
   <dt>
     Created at
   </dt>
